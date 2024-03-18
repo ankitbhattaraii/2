@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color:#bdc1c6;
+  cursor: url("./icon.svg"), auto;
+}
+
+.header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: flex-end;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.header__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.header--link {
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header--link:hover {
+  /* color: blue; */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header--profile {
+  aspect-ratio: 1/1;
+  height: 2.3rem;
+  border-radius: 100%;
+}
+
+.header--apps {
+  height: 1.7rem;
+  width: auto;
+  aspect-ratio: 1/1;
+  opacity: 0.7;
+}
+
+/* body started */
+
+/* not a good practice defining a height in vh units.*/
+.google {
+  min-height: 84.3dvh;
+}
+
+.google__wrapper {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.google--img {
+  height: 7rem;
+}
+
+.google__wrapper input {
+  min-width: 40rem;
+  padding: 0.85rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: 1px solid rgba(54, 54, 54, 0.2);
+  outline: none;
+  color: rgb(41, 40, 40);
+}
+
+.google__wrapper input::placeholder {
+  font-size: 0.9rem;
+}
+
+.google__buttons {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.google__buttons button {
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  color: rgb(68, 67, 67);
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: rgb(234, 238, 241);
+}
+
+.google__buttons button:hover {
+  background-color: rgb(217, 220, 223);
+  color: black;
+}
+
+.google__language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.google__language a {
+  color: blue;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* body ended */
+
+/* footer started */
+
+.footer {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  background-color: black;
+  
+}
+
+.footer__box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer__box a{
+  color: white;
+}
